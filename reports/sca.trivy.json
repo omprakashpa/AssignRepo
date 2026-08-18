@@ -1,0 +1,1860 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.74.0"
+  },
+  "ReportID": "01a0130d-c673-7915-a9d6-b4d3f9185b7d",
+  "CreatedAt": "2026-08-18T04:07:45.011596999Z",
+  "ArtifactID": "sha256:fb51b8ae81cd4be8385e691b826464024c79b43b03dfb9e5a11c06f0bdc9b9d6",
+  "ArtifactName": ".",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "https://github.com/omprakashpa/AssignRepo",
+    "Branch": "main",
+    "Commit": "7f5c84985d2e7c57b9e79ac4ff31042dba71f29c",
+    "CommitMsg": "Update ci.yml",
+    "Author": "omprakashpa \u003comprakashpa@cybage.com\u003e",
+    "Committer": "GitHub \u003cnoreply@github.com\u003e"
+  },
+  "Results": [
+    {
+      "Target": "requirements.txt",
+      "Class": "lang-pkgs",
+      "Type": "pip",
+      "Packages": [
+        {
+          "Name": "bcrypt",
+          "Identifier": {
+            "PURL": "pkg:pypi/bcrypt@4.0.1",
+            "UID": "1cf0639965725d4a"
+          },
+          "Version": "4.0.1",
+          "Locations": [
+            {
+              "StartLine": 8,
+              "EndLine": 8
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "cryptography",
+          "Identifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "Version": "38.0.1",
+          "Locations": [
+            {
+              "StartLine": 7,
+              "EndLine": 7
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "fastapi",
+          "Identifier": {
+            "PURL": "pkg:pypi/fastapi@0.104.1",
+            "UID": "780aa925296deb33"
+          },
+          "Version": "0.104.1",
+          "Locations": [
+            {
+              "StartLine": 1,
+              "EndLine": 1
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "httpx",
+          "Identifier": {
+            "PURL": "pkg:pypi/httpx@0.25.2",
+            "UID": "144e275b14cedaf9"
+          },
+          "Version": "0.25.2",
+          "Locations": [
+            {
+              "StartLine": 9,
+              "EndLine": 9
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "passlib",
+          "Identifier": {
+            "PURL": "pkg:pypi/passlib@1.7.4",
+            "UID": "7b4b3c0f19e0ea66"
+          },
+          "Version": "1.7.4",
+          "Locations": [
+            {
+              "StartLine": 5,
+              "EndLine": 5
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "pytest",
+          "Identifier": {
+            "PURL": "pkg:pypi/pytest@7.4.3",
+            "UID": "6f367d48c19912b3"
+          },
+          "Version": "7.4.3",
+          "Locations": [
+            {
+              "StartLine": 10,
+              "EndLine": 10
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "pytest-asyncio",
+          "Identifier": {
+            "PURL": "pkg:pypi/pytest-asyncio@0.21.1",
+            "UID": "ab423c17e80aa700"
+          },
+          "Version": "0.21.1",
+          "Locations": [
+            {
+              "StartLine": 11,
+              "EndLine": 11
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "python-jose",
+          "Identifier": {
+            "PURL": "pkg:pypi/python-jose@3.3.0",
+            "UID": "13220d9d18bc9672"
+          },
+          "Version": "3.3.0",
+          "Locations": [
+            {
+              "StartLine": 4,
+              "EndLine": 4
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "python-multipart",
+          "Identifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "Version": "0.0.6",
+          "Locations": [
+            {
+              "StartLine": 6,
+              "EndLine": 6
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "sqlalchemy",
+          "Identifier": {
+            "PURL": "pkg:pypi/sqlalchemy@2.0.36",
+            "UID": "7001d50c76eecb89"
+          },
+          "Version": "2.0.36",
+          "Locations": [
+            {
+              "StartLine": 3,
+              "EndLine": 3
+            }
+          ],
+          "AnalyzedBy": "pip"
+        },
+        {
+          "Name": "uvicorn",
+          "Identifier": {
+            "PURL": "pkg:pypi/uvicorn@0.24.0",
+            "UID": "b72df9dd5e6558ad"
+          },
+          "Version": "0.24.0",
+          "Locations": [
+            {
+              "StartLine": 2,
+              "EndLine": 2
+            }
+          ],
+          "AnalyzedBy": "pip"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-0286",
+          "VendorIDs": [
+            "GHSA-x4qr-2fvf-3mr5"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "39.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-0286",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:ce98c264f6a6b68e1f7e48fc2c495553d341c04d3b5b355e9c34e067fa7dbd66",
+          "Title": "openssl: X.400 address type confusion in X.509 GeneralName",
+          "Description": "There is a type confusion vulnerability relating to X.400 address processing\ninside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\nthe public structure definition for GENERAL_NAME incorrectly specified the type\nof the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\nthe OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\nASN1_STRING.\n\nWhen CRL checking is enabled (i.e. the application sets the\nX509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass\narbitrary pointers to a memcmp call, enabling them to read memory contents or\nenact a denial of service. In most cases, the attack requires the attacker to\nprovide both the certificate chain and CRL, neither of which need to have a\nvalid signature. If the attacker only controls one of these inputs, the other\ninput must already contain an X.400 address as a CRL distribution point, which\nis uncommon. As such, this vulnerability is most likely to only affect\napplications which have implemented their own functionality for retrieving CRLs\nover a network.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "julia": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            },
+            "julia": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:7937",
+            "https://access.redhat.com/security/cve/CVE-2023-0286",
+            "https://access.redhat.com/security/cve/cve-2023-0286",
+            "https://bugzilla.redhat.com/2164440",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2164440",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286",
+            "https://errata.almalinux.org/9/ALSA-2025-7937.html",
+            "https://errata.rockylinux.org/RLSA-2023:1405",
+            "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.6.2-relnotes.txt",
+            "https://ftp.openbsd.org/pub/OpenBSD/patches/7.2/common/018_x509.patch.sig",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d",
+            "https://github.com/advisories/GHSA-x4qr-2fvf-3mr5",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-x4qr-2fvf-3mr5",
+            "https://linux.oracle.com/cve/CVE-2023-0286.html",
+            "https://linux.oracle.com/errata/ELSA-2025-7937.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+            "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2023-0003",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0006.html",
+            "https://security.gentoo.org/glsa/202402-08",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://ubuntu.com/security/notices/USN-5845-1",
+            "https://ubuntu.com/security/notices/USN-5845-2",
+            "https://ubuntu.com/security/notices/USN-6564-1",
+            "https://ubuntu.com/security/notices/USN-7894-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-0286",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:24.267Z",
+          "LastModifiedDate": "2026-06-17T05:25:12.637Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-50782",
+          "VendorIDs": [
+            "GHSA-3ww4-gg4f-jr7f"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "42.0.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-50782",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:f4b6d2772bc62ee1fe7e0384baca144ed211c3a92a06c98055b2b91cc2e5e37f",
+          "Title": "python-cryptography: Bleichenbacher timing oracle attack against RSA decryption - incomplete fix for CVE-2020-25659",
+          "Description": "A flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "photon": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+              "V3Score": 7.5,
+              "V40Score": 8.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-50782",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2254432",
+            "https://github.com/openssl/openssl/pull/13817",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/issues/9785",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-50782",
+            "https://people.redhat.com/~hkario/marvin/",
+            "https://ubuntu.com/security/notices/USN-6663-1",
+            "https://ubuntu.com/security/notices/USN-6673-1",
+            "https://ubuntu.com/security/notices/USN-6673-2",
+            "https://www.couchbase.com/alerts",
+            "https://www.couchbase.com/alerts/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-50782"
+          ],
+          "PublishedDate": "2024-02-05T21:15:11.183Z",
+          "LastModifiedDate": "2026-06-17T06:39:58.24Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-26130",
+          "VendorIDs": [
+            "GHSA-6vqw-3v5j-54x4"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "42.0.4",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26130",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:722f673095c3e96c9e6c425dcc86ac64ddf108fb43fd4be906de58f15a9d21fe",
+          "Title": "python-cryptography: NULL pointer dereference with pkcs12.serialize_key_and_certificates when called with a non-matching certificate and private key and an hmac_hash override",
+          "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Starting in version 38.0.0 and prior to version 42.0.4, if `pkcs12.serialize_key_and_certificates` is called with both a certificate whose public key did not match the provided private key and an `encryption_algorithm` with `hmac_hash` set (via `PrivateFormat.PKCS12.encryption_builder().hmac_hash(...)`, then a NULL pointer dereference would occur, crashing the Python process. This has been resolved in version 42.0.4, the first version in which a `ValueError` is properly raised.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:15608",
+            "https://access.redhat.com/security/cve/CVE-2024-26130",
+            "https://bugzilla.redhat.com/2269617",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2269617",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26130",
+            "https://errata.almalinux.org/9/ALSA-2025-15608.html",
+            "https://errata.rockylinux.org/RLSA-2025:15608",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/97d231672763cdb5959a3b191e692a362f1b9e55",
+            "https://github.com/pyca/cryptography/pull/10423",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-6vqw-3v5j-54x4",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/cryptography/PYSEC-2024-225.yaml",
+            "https://linux.oracle.com/cve/CVE-2024-26130.html",
+            "https://linux.oracle.com/errata/ELSA-2025-20364.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-26130",
+            "https://ubuntu.com/security/notices/USN-6673-1",
+            "https://ubuntu.com/security/notices/USN-6673-3",
+            "https://www.cve.org/CVERecord?id=CVE-2024-26130"
+          ],
+          "PublishedDate": "2024-02-21T17:15:09.863Z",
+          "LastModifiedDate": "2026-06-17T07:17:09.793Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-26007",
+          "VendorIDs": [
+            "GHSA-r6ph-v2qm-q3c2"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "46.0.5",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-26007",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:cf4e3baa85326aa9ead706baaa445ff00c52ae35d39a260049bd6d1e7e334f7e",
+          "Title": "cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves",
+          "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to 46.0.5, the public_key_from_numbers (or EllipticCurvePublicNumbers.public_key()), EllipticCurvePublicNumbers.public_key(), load_der_public_key() and load_pem_public_key() functions do not verify that the point belongs to the expected prime-order subgroup of the curve. This missing validation allows an attacker to provide a public key point P from a small-order subgroup. This can lead to security issues in various situations, such as the most commonly used signature verification (ECDSA) and shared key negotiation (ECDH). When the victim computes the shared secret as S = [victim_private_key]P via ECDH, this leaks information about victim_private_key mod (small_subgroup_order). For curves with cofactor \u003e 1, this reveals the least significant bits of the private key. When these weak public keys are used in ECDSA , it's easy to forge signatures on the small subgroup. Only SECT curves are impacted by this. This vulnerability is fixed in 46.0.5.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-345",
+            "CWE-354"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "azure": 3,
+            "ghsa": 3,
+            "nvd": 2,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 8.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/02/10/4",
+            "https://access.redhat.com/errata/RHSA-2026:10184",
+            "https://access.redhat.com/errata/RHSA-2026:12176",
+            "https://access.redhat.com/errata/RHSA-2026:13512",
+            "https://access.redhat.com/errata/RHSA-2026:13545",
+            "https://access.redhat.com/errata/RHSA-2026:13553",
+            "https://access.redhat.com/errata/RHSA-2026:13672",
+            "https://access.redhat.com/errata/RHSA-2026:19355",
+            "https://access.redhat.com/errata/RHSA-2026:21431",
+            "https://access.redhat.com/errata/RHSA-2026:21517",
+            "https://access.redhat.com/errata/RHSA-2026:22330",
+            "https://access.redhat.com/errata/RHSA-2026:22993",
+            "https://access.redhat.com/errata/RHSA-2026:2694",
+            "https://access.redhat.com/errata/RHSA-2026:5168",
+            "https://access.redhat.com/errata/RHSA-2026:5665",
+            "https://access.redhat.com/errata/RHSA-2026:6308",
+            "https://access.redhat.com/errata/RHSA-2026:6309",
+            "https://access.redhat.com/errata/RHSA-2026:6497",
+            "https://access.redhat.com/errata/RHSA-2026:6567",
+            "https://access.redhat.com/errata/RHSA-2026:6568",
+            "https://access.redhat.com/errata/RHSA-2026:7295",
+            "https://access.redhat.com/security/cve/CVE-2026-26007",
+            "https://bugzilla.redhat.com/2438762",
+            "https://bugzilla.redhat.com/2447194",
+            "https://bugzilla.redhat.com/2448553",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2438762",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2447194",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2448553",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-26007",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-30922",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32597",
+            "https://errata.almalinux.org/8/ALSA-2026-12176.html",
+            "https://errata.rockylinux.org/RLSA-2026:12176",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/0eebb9dbb6343d9bc1d91e5a2482ed4e054a6d8c",
+            "https://github.com/pyca/cryptography/releases/tag/46.0.5",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-r6ph-v2qm-q3c2",
+            "https://linux.oracle.com/cve/CVE-2026-26007.html",
+            "https://linux.oracle.com/errata/ELSA-2026-19355.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-26007",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-26007.json",
+            "https://ubuntu.com/security/notices/USN-8087-1",
+            "https://ubuntu.com/security/notices/USN-8087-3",
+            "https://www.cve.org/CVERecord?id=CVE-2026-26007"
+          ],
+          "PublishedDate": "2026-02-10T22:17:00.307Z",
+          "LastModifiedDate": "2026-08-17T12:17:33.68Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-69249",
+          "VendorIDs": [
+            "GHSA-jwv3-5hgf-82ww"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "49.0.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-69249",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:1459352483b3749c7ad1c1cca2dd0b94289a4118634b7ccc3e64a4b34ed47ef0",
+          "Title": "python-cryptography is a package designed to expose cryptographic prim ...",
+          "Description": "python-cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to 49.0.0, when resolving invalid certificate chains that include duplicate copies of self-signed certificates, the processing recursively invokes the same candidate, leading to an exponential blowup. Although the limitation that the chain depth cannot exceed a specified maximum depth prevents unbounded recursion and guarantees termination, an attacker-controlled certificate chain can lead the processing to easily take more than 5s to reject in testing. This amplification could form the basis for a resource exhaustion denial of service attack. The core issue arises in the recursive nature of build_chain_inner, which does not de-duplicate against previously analyzed candidates. As the correctness of validation is not affected, the integrity of a system cannot be compromised through this vector, only its availability. This issue is fixed in 49.0.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+              "V40Score": 8.7
+            }
+          },
+          "References": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/4a12cf49675a184e47f912b00b04f3a629283582",
+            "https://github.com/pyca/cryptography/pull/14960",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-jwv3-5hgf-82ww"
+          ],
+          "PublishedDate": "2026-08-03T22:16:52.72Z",
+          "LastModifiedDate": "2026-08-04T15:16:43.86Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-537c-gmf6-5ccf",
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "48.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-537c-gmf6-5ccf",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:2bfe748a18ff859a8faa23cb4b22a1c8c3bc1912ce3514a6073fada158dd6ca4",
+          "Title": "Vulnerable OpenSSL included in cryptography wheels",
+          "Description": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in wheels prior to cryptograph 48.01 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://openssl-library.org/news/secadv/20260609.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-537c-gmf6-5ccf",
+            "https://openssl-library.org/news/secadv/20260609.txt"
+          ],
+          "PublishedDate": "2026-06-15T20:12:27Z",
+          "LastModifiedDate": "2026-06-15T20:12:27Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-23931",
+          "VendorIDs": [
+            "GHSA-w7pp-m8wf-vj6r"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "39.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-23931",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:65d1ef295830b295301f176fe52cc4e23a9fada66fe2865b66f661ec3fb15869",
+          "Title": "python-cryptography: memory corruption via immutable objects",
+          "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. In affected versions `Cipher.update_into` would accept Python objects which implement the buffer protocol, but provide only immutable buffers. This would allow immutable objects (such as `bytes`) to be mutated, thus violating fundamental rules of Python and resulting in corrupted output. This now correctly raises an exception. This issue has been present since `update_into` was originally introduced in cryptography 1.8.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "amazon": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "ghsa": 2,
+            "nvd": 2,
+            "oracle-oval": 2,
+            "photon": 2,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N",
+              "V3Score": 6.5,
+              "V40Score": 6.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:6615",
+            "https://access.redhat.com/errata/RHSA-2024:2985",
+            "https://access.redhat.com/security/cve/CVE-2023-23931",
+            "https://bugzilla.redhat.com/2171817",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2158559",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2171817",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2196183",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2242493",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40897",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23931",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27043",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-43804",
+            "https://errata.almalinux.org/9/ALSA-2023-6615.html",
+            "https://errata.rockylinux.org/RLSA-2024:2985",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/d6951dca25de45abd52da51b608055371fbcde4e",
+            "https://github.com/pyca/cryptography/pull/8230",
+            "https://github.com/pyca/cryptography/pull/8230/commits/94a50a9731f35405f0357fa5f3b177d46a726ab3",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-w7pp-m8wf-vj6r",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/cryptography/PYSEC-2023-11.yaml",
+            "https://linux.oracle.com/cve/CVE-2023-23931.html",
+            "https://linux.oracle.com/errata/ELSA-2024-2985.html",
+            "https://lists.debian.org/debian-lts-announce/2024/10/msg00012.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-23931",
+            "https://security.netapp.com/advisory/ntap-20230324-0007",
+            "https://security.netapp.com/advisory/ntap-20230324-0007/",
+            "https://ubuntu.com/security/notices/USN-6539-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-23931"
+          ],
+          "PublishedDate": "2023-02-07T21:15:09.85Z",
+          "LastModifiedDate": "2026-06-17T05:38:18.92Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-49083",
+          "VendorIDs": [
+            "GHSA-jfhm-5ghh-2f97"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "41.0.6",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-49083",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:9700a0bdd7609a60f0cbe088e8129e07617dadbc7ef15f27c8f60b2c6b1bd840",
+          "Title": "python-cryptography: NULL-dereference when loading PKCS7 certificates",
+          "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Calling `load_pem_pkcs7_certificates` or `load_der_pkcs7_certificates` could lead to a NULL-pointer dereference and segfault. Exploitation of this vulnerability poses a serious risk of Denial of Service (DoS) for any application attempting to deserialize a PKCS7 blob/certificate. The consequences extend to potential disruptions in system availability and stability. This vulnerability has been patched in version 41.0.6.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "amazon": 2,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 2,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/11/29/2",
+            "https://access.redhat.com/errata/RHSA-2025:14553",
+            "https://access.redhat.com/errata/RHSA-2025:15874",
+            "https://access.redhat.com/security/cve/CVE-2023-49083",
+            "https://bugzilla.redhat.com/2255331",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2255331",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-49083",
+            "https://errata.almalinux.org/9/ALSA-2025-15874.html",
+            "https://errata.rockylinux.org/RLSA-2025:14553",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/f09c261ca10a31fe41b1262306db7f8f1da0e48a",
+            "https://github.com/pyca/cryptography/pull/9926",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-jfhm-5ghh-2f97",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/cryptography/PYSEC-2023-254.yaml",
+            "https://linux.oracle.com/cve/CVE-2023-49083.html",
+            "https://linux.oracle.com/errata/ELSA-2025-15874.html",
+            "https://lists.debian.org/debian-lts-announce/2024/10/msg00012.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QMNTYMUGFJSDBYBU22FUYBHFRZODRKXV",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QMNTYMUGFJSDBYBU22FUYBHFRZODRKXV/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-49083",
+            "https://ubuntu.com/security/notices/USN-6539-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-49083"
+          ],
+          "PublishedDate": "2023-11-29T19:15:07.967Z",
+          "LastModifiedDate": "2026-06-17T06:35:19.82Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-0727",
+          "VendorIDs": [
+            "GHSA-9v9h-cgj8-h64p"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "42.0.2",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-0727",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:1306938c0995ec939373d04d63a03e5db22433942142f34827b63c827e0294dc",
+          "Title": "openssl: denial of service via null dereference",
+          "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "amazon": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "ghsa": 2,
+            "julia": 2,
+            "nvd": 2,
+            "oracle-oval": 2,
+            "photon": 2,
+            "redhat": 1,
+            "rocky": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "julia": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/03/11/1",
+            "https://access.redhat.com/errata/RHSA-2024:9088",
+            "https://access.redhat.com/security/cve/CVE-2024-0727",
+            "https://bugzilla.redhat.com/2257571",
+            "https://bugzilla.redhat.com/2258502",
+            "https://bugzilla.redhat.com/2259944",
+            "https://bugzilla.redhat.com/2284243",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2257571",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2258502",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2259944",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2284243",
+            "https://cert-portal.siemens.com/productcert/html/ssa-265688.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-277137.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-331112.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-915275.html",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6129",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6237",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0727",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1298",
+            "https://errata.almalinux.org/9/ALSA-2024-9088.html",
+            "https://errata.rockylinux.org/RLSA-2024:9088",
+            "https://github.com/advisories/GHSA-9v9h-cgj8-h64p",
+            "https://github.com/alexcrichton/openssl-src-rs/commit/add20f73b6b42be7451af2e1044d4e0e778992b2",
+            "https://github.com/github/advisory-database/pull/3472",
+            "https://github.com/openssl/openssl/commit/09df4395b5071217b76dc7d3d2e630eb8c5a79c2",
+            "https://github.com/openssl/openssl/commit/775acfdbd0c6af9ac855f34969cdab0c0c90844a",
+            "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
+            "https://github.com/openssl/openssl/pull/23362",
+            "https://github.com/pyca/cryptography/commit/3519591d255d4506fbcd0d04037d45271903c64d",
+            "https://github.openssl.org/openssl/extended-releases/commit/03b3941d60c4bce58fab69a0c22377ab439bc0e8",
+            "https://github.openssl.org/openssl/extended-releases/commit/aebaa5883e31122b404e450732dc833dc9dee539",
+            "https://linux.oracle.com/cve/CVE-2024-0727.html",
+            "https://linux.oracle.com/errata/ELSA-2024-9088.html",
+            "https://lists.debian.org/debian-lts-announce/2024/10/msg00033.html",
+            "https://lists.debian.org/debian-lts-announce/2024/11/msg00000.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-0727",
+            "https://security.netapp.com/advisory/ntap-20240208-0006",
+            "https://security.netapp.com/advisory/ntap-20240208-0006/",
+            "https://ubuntu.com/security/notices/USN-6622-1",
+            "https://ubuntu.com/security/notices/USN-6632-1",
+            "https://ubuntu.com/security/notices/USN-6709-1",
+            "https://ubuntu.com/security/notices/USN-7018-1",
+            "https://ubuntu.com/security/notices/USN-7894-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-0727",
+            "https://www.openssl.org/news/secadv/20240125.txt"
+          ],
+          "PublishedDate": "2024-01-26T09:15:07.637Z",
+          "LastModifiedDate": "2026-06-17T06:54:07.03Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-69248",
+          "VendorIDs": [
+            "GHSA-m2h6-j472-rp4c"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "49.0.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-69248",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:173603b11be01004cc78a9172a0c5797bc4b72e77080a20ebce6a65a56e7cd5e",
+          "Title": "cryptography is a package designed to expose cryptographic primitives  ...",
+          "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to 49.0.0, if an intermediate constrained CA permits the DNS name foo.example.com, and the leaf certificate has a wildcard in its DNS SAN of *.example.com, python-cryptography's verifier accepts which allows escaping outside of the permitted names. The core issue is in DNSConstraint::matches, where a wildcard pattern was treated as matching a more-specific permitted constraint even though *.example.com can expand to sibling names such as bar.example.com outside foo.example.com. This allows acceptance of an invalid certificate chain. This issue is fixed in 49.0.0.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N/E:P",
+              "V40Score": 6.9
+            }
+          },
+          "References": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/4d035a4225965edeffd312079a510ef25fcfdcb2",
+            "https://github.com/pyca/cryptography/pull/14888",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-m2h6-j472-rp4c"
+          ],
+          "PublishedDate": "2026-08-03T22:16:52.55Z",
+          "LastModifiedDate": "2026-08-04T16:16:28.73Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-39hc-v87j-747x",
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "38.0.3",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-39hc-v87j-747x",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:6f05592d1184435d7fa75fb866b7710c01c7a2aa551b209ad3d6b1efb35e3416",
+          "Title": "Vulnerable OpenSSL included in cryptography wheels",
+          "Description": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 37.0.0-38.0.3 are vulnerable to a number of security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20221101.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ghsa": 2
+          },
+          "References": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/382e759bcded5773330eeed748c86b213ec618c5",
+            "https://github.com/pyca/cryptography/commit/cf2ada625d1188d6cd46396f301b98095da577f7",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-39hc-v87j-747x"
+          ],
+          "PublishedDate": "2022-11-02T18:11:56Z",
+          "LastModifiedDate": "2022-11-02T18:11:56Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-h4gh-qq45-vh27",
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "43.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-h4gh-qq45-vh27",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:68ad0361607eafe3ba4d511ff55742e441d2a7f075b57e1460eb63c9682a5966",
+          "Title": "pyca/cryptography has a vulnerable OpenSSL included in cryptography wheels",
+          "Description": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 37.0.0-43.0.0 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://openssl-library.org/news/secadv/20240903.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ghsa": 2
+          },
+          "References": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-h4gh-qq45-vh27",
+            "https://openssl-library.org/news/secadv/20240903.txt"
+          ],
+          "PublishedDate": "2024-09-03T21:59:48Z",
+          "LastModifiedDate": "2024-09-03T21:59:48Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-34073",
+          "VendorIDs": [
+            "GHSA-m959-cc7f-wv43"
+          ],
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "46.0.6",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-34073",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:ec43e4ccd5fe1324cec76ba2da6887b8e6a4df05bdc661451140f4f89425bd23",
+          "Title": "python-cryptography: Cryptography: Security bypass due to improper DNS name constraint validation",
+          "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to version 46.0.6, DNS name constraints were only validated against SANs within child certificates, and not the \"peer name\" presented during each validation. Consequently, cryptography would allow a peer named bar.example.com to validate against a wildcard leaf certificate for *.example.com, even if the leaf's parent certificate (or upwards) contained an excluded subtree constraint for bar.example.com. This issue has been patched in version 46.0.6.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "nvd": 2,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+              "V3Score": 5.3,
+              "V40Score": 1.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-34073",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-m959-cc7f-wv43",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/cryptography/PYSEC-2026-35.yaml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-34073",
+            "https://www.cve.org/CVERecord?id=CVE-2026-34073"
+          ],
+          "PublishedDate": "2026-03-31T03:15:59.123Z",
+          "LastModifiedDate": "2026-06-17T10:38:31.343Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-5cpq-8wj7-hf2v",
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "41.0.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-5cpq-8wj7-hf2v",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:f47dd3eeef899483072d7dee1e6db9da8a0544c44d8c8280bd1ce5fa32fd972b",
+          "Title": "Vulnerable OpenSSL included in cryptography wheels",
+          "Description": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.5-40.0.2 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://www.openssl.org/news/secadv/20230530.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+          "Severity": "LOW",
+          "VendorSeverity": {
+            "ghsa": 1
+          },
+          "References": [
+            "https://cryptography.io/en/latest/changelog/#v41-0-0",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/8708245ccdeaff21d65eea68a4f8d2a7c5949a22",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-5cpq-8wj7-hf2v"
+          ],
+          "PublishedDate": "2023-06-02T17:13:10Z",
+          "LastModifiedDate": "2023-06-02T17:13:10Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-jm77-qphf-c4w8",
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "41.0.3",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-jm77-qphf-c4w8",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:7b3be082021609a9b15c6327d2aec49922048ca2ab0eb5578ec96fbb68ea63d2",
+          "Title": "pyca/cryptography's wheels include vulnerable OpenSSL",
+          "Description": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8-41.0.2 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230731.txt, https://www.openssl.org/news/secadv/20230719.txt, and https://www.openssl.org/news/secadv/20230714.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+          "Severity": "LOW",
+          "VendorSeverity": {
+            "ghsa": 1
+          },
+          "References": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/b22271cf3c3dd8dc8978f8f4b00b5c7060b6538d",
+            "https://github.com/pyca/cryptography/commit/bfa4d95f0f356f2d535efd5c775e0fb3efe90ef2",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-jm77-qphf-c4w8",
+            "https://www.openssl.org/news/secadv/20230714.txt",
+            "https://www.openssl.org/news/secadv/20230719.txt",
+            "https://www.openssl.org/news/secadv/20230731.txt"
+          ],
+          "PublishedDate": "2023-08-01T22:34:41Z",
+          "LastModifiedDate": "2023-08-01T22:34:41Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-v8gr-m533-ghj9",
+          "PkgName": "cryptography",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@38.0.1",
+            "UID": "4079e610cf621359"
+          },
+          "InstalledVersion": "38.0.1",
+          "FixedVersion": "41.0.4",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-v8gr-m533-ghj9",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:6b0f2566bf347b006d1726b9f30e96a35fed72a142063fc29493a450c3d9641b",
+          "Title": "Vulnerable OpenSSL included in cryptography wheels",
+          "Description": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 2.5-41.0.3 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230908.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+          "Severity": "LOW",
+          "VendorSeverity": {
+            "ghsa": 1
+          },
+          "References": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/fc11bce6930e591ce26a2317b31b9ce2b3e25512",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-v8gr-m533-ghj9"
+          ],
+          "PublishedDate": "2023-09-21T17:07:01Z",
+          "LastModifiedDate": "2023-09-21T17:07:01Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-71176",
+          "VendorIDs": [
+            "GHSA-6w46-j5rx-g56g"
+          ],
+          "PkgName": "pytest",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/pytest@7.4.3",
+            "UID": "6f367d48c19912b3"
+          },
+          "InstalledVersion": "7.4.3",
+          "FixedVersion": "9.0.3",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-71176",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:2b8f539194b785476a6812b42f9c82c001890c793a1f537988a9218e8105ee13",
+          "Title": "pytest: pytest: Denial of Service or Privilege Escalation via insecure temporary directory handling",
+          "Description": "pytest through 9.0.2 on UNIX relies on directories with the /tmp/pytest-of-{user} name pattern, which allows local users to cause a denial of service or possibly gain privileges.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-379"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+              "V3Score": 6.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-71176",
+            "https://github.com/pytest-dev/pytes",
+            "https://github.com/pytest-dev/pytest/commit/95d8423bd24992deea5b9df32555fa1741679e2c",
+            "https://github.com/pytest-dev/pytest/issues/13669",
+            "https://github.com/pytest-dev/pytest/pull/14343",
+            "https://github.com/pytest-dev/pytest/releases/tag/9.0.3",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-71176",
+            "https://www.cve.org/CVERecord?id=CVE-2025-71176",
+            "https://www.openwall.com/lists/oss-security/2026/01/21/5"
+          ],
+          "PublishedDate": "2026-01-22T05:16:17.577Z",
+          "LastModifiedDate": "2026-06-17T10:03:47.83Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-33663",
+          "VendorIDs": [
+            "GHSA-6c5p-j8vq-pqhj"
+          ],
+          "PkgName": "python-jose",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-jose@3.3.0",
+            "UID": "13220d9d18bc9672"
+          },
+          "InstalledVersion": "3.3.0",
+          "FixedVersion": "3.4.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-33663",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:cdc3320f5bfb46c99fca79a77e8bbbc228f39587623f126ca50e44be3c9a1c74",
+          "Title": "python-jose: algorithm confusion with OpenSSH ECDSA keys and other key formats",
+          "Description": "python-jose through 3.3.0 has algorithm confusion with OpenSSH ECDSA keys and other key formats. This is similar to CVE-2022-29217.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V3Score": 7.4,
+              "V40Score": 9.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-33663",
+            "https://github.com/mpdavis/python-jose",
+            "https://github.com/mpdavis/python-jose/issues/346",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/python-jose/PYSEC-2024-232.yaml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-33663",
+            "https://www.cve.org/CVERecord?id=CVE-2024-33663",
+            "https://www.vicarius.io/vsociety/posts/algorithm-confusion-in-python-jose-cve-2024-33663"
+          ],
+          "PublishedDate": "2024-04-26T00:15:09.01Z",
+          "LastModifiedDate": "2026-06-17T07:32:11.28Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-33664",
+          "VendorIDs": [
+            "GHSA-cjwg-qfpm-7377"
+          ],
+          "PkgName": "python-jose",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-jose@3.3.0",
+            "UID": "13220d9d18bc9672"
+          },
+          "InstalledVersion": "3.3.0",
+          "FixedVersion": "3.4.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-33664",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:bd1c731ed3b0b0eb680bb0f8c126df48c8d86213264baf93284e5ee87dda7d76",
+          "Title": "python-jose: allows attackers to cause a denial of service",
+          "Description": "python-jose through 3.3.0 allows attackers to cause a denial of service (resource consumption) during a decode via a crafted JSON Web Encryption (JWE) token with a high compression ratio, aka a \"JWT bomb.\" This is similar to CVE-2024-21319.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-33664",
+            "https://github.com/mpdavis/python-jose",
+            "https://github.com/mpdavis/python-jose/issues/344",
+            "https://github.com/mpdavis/python-jose/pull/345",
+            "https://github.com/mpdavis/python-jose/releases/tag/3.4.0",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/python-jose/PYSEC-2024-233.yaml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-33664",
+            "https://www.cve.org/CVERecord?id=CVE-2024-33664",
+            "https://www.vicarius.io/vsociety/posts/jwt-bomb-in-python-jose-cve-2024-33664"
+          ],
+          "PublishedDate": "2024-04-26T00:15:09.06Z",
+          "LastModifiedDate": "2026-06-17T07:32:11.45Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-24762",
+          "VendorIDs": [
+            "GHSA-2jv5-9r88-3w3p"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.7",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-24762",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:156e793560dc8b08f2c2d8c33f423ae24f341647ab6674bb12651218980bf379",
+          "Title": "`python-multipart` is a streaming multipart parser for Python. When us ...",
+          "Description": "`python-multipart` is a streaming multipart parser for Python. When using form data, `python-multipart` uses a Regular Expression to parse the HTTP `Content-Type` header, including options. An attacker could send a custom-made `Content-Type` option that is very difficult for the RegEx to process, consuming CPU resources and stalling indefinitely (minutes or more) while holding the main event loop. This means that process can't handle any more requests, leading to regular expression denial of service. This vulnerability has been patched in version 0.0.7.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/commit/20f0ef6b4e4caf7d69a667c54dff57fe467109a4",
+            "https://github.com/Kludex/python-multipart/commit/20f0ef6b4e4caf7d69a667c54dff57fe467109a4%20%280.0.7%29",
+            "https://github.com/Kludex/python-multipart/pull/75",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-2jv5-9r88-3w3p",
+            "https://github.com/andrew-d/python-multipart/blob/d3d16dae4b061c34fe9d3c9081d9800c49fc1f7a/multipart/multipart.py#L72-L74",
+            "https://github.com/encode/starlette/commit/13e5c26a27f4903924624736abd6131b2da80cc5",
+            "https://github.com/encode/starlette/security/advisories/GHSA-93gm-qmq6-w238",
+            "https://github.com/github/advisory-database/pull/4829",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/fastapi/PYSEC-2024-38.yaml",
+            "https://github.com/tiangolo/fastapi/commit/9d34ad0ee8a0dfbbcce06f76c2d5d851085024fc",
+            "https://github.com/tiangolo/fastapi/releases/tag/0.109.1",
+            "https://github.com/tiangolo/fastapi/security/advisories/GHSA-qf9m-vfgh-m389",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-24762",
+            "https://ubuntu.com/security/notices/USN-8027-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-24762"
+          ],
+          "PublishedDate": "2024-02-05T15:15:09.26Z",
+          "LastModifiedDate": "2026-06-17T07:14:48.49Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-53981",
+          "VendorIDs": [
+            "GHSA-59g5-xgcq-4qw3"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.18",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-53981",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:cad381901dd486eada11779deccf4f7afda19253e85b377c5d7e8a6bb1880a06",
+          "Title": "python-multipart: python-multipart has a DoS via deformation `multipart/form-data` boundary",
+          "Description": "python-multipart is a streaming multipart parser for Python. When parsing form data, python-multipart skips line breaks (CR \\r or LF \\n) in front of the first boundary and any tailing bytes after the last boundary. This happens one byte at a time and emits a log event each time, which may cause excessive logging for certain inputs. An attacker could abuse this by sending a malicious request with lots of data before the first or after the last boundary, causing high CPU load and stalling the processing thread for a significant amount of time. In case of ASGI application, this could stall the event loop and prevent other requests from being processed, resulting in a denial of service (DoS). This vulnerability is fixed in 0.0.18.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+              "V3Score": 7.5,
+              "V40Score": 8.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-53981",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/commit/c4fe4d3cebc08c660e57dd709af1ffa7059b3177",
+            "https://github.com/Kludex/python-multipart/commit/c4fe4d3cebc08c660e57dd709af1ffa7059b3177%20%280.0.19%29",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-59g5-xgcq-4qw3",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-53981",
+            "https://ubuntu.com/security/notices/USN-8027-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-53981"
+          ],
+          "PublishedDate": "2024-12-02T16:15:14.457Z",
+          "LastModifiedDate": "2026-06-17T08:09:36.64Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-24486",
+          "VendorIDs": [
+            "GHSA-wp53-j4wj-2cfg"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.22",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24486",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:ff3352f5334ed4627274d22e3f9bf0fb65ac0c9765e3002d21aba5bd56d78001",
+          "Title": "python-multipart: Python-Multipart: Arbitrary file write via path traversal vulnerability",
+          "Description": "Python-Multipart is a streaming multipart parser for Python. Prior to version 0.0.22, a Path Traversal vulnerability exists when using non-default configuration options `UPLOAD_DIR` and `UPLOAD_KEEP_FILENAME=True`. An attacker can write uploaded files to arbitrary locations on the filesystem by crafting a malicious filename. Users should upgrade to version 0.0.22 to receive a patch or, as a workaround, avoid using `UPLOAD_KEEP_FILENAME=True` in project configurations.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:10184",
+            "https://access.redhat.com/errata/RHSA-2026:1504",
+            "https://access.redhat.com/errata/RHSA-2026:19712",
+            "https://access.redhat.com/errata/RHSA-2026:3461",
+            "https://access.redhat.com/errata/RHSA-2026:3462",
+            "https://access.redhat.com/errata/RHSA-2026:3713",
+            "https://access.redhat.com/errata/RHSA-2026:3782",
+            "https://access.redhat.com/errata/RHSA-2026:3960",
+            "https://access.redhat.com/errata/RHSA-2026:42644",
+            "https://access.redhat.com/errata/RHSA-2026:44696",
+            "https://access.redhat.com/errata/RHSA-2026:51357",
+            "https://access.redhat.com/security/cve/CVE-2026-24486",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2433132",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/commit/9433f4bbc9652bdde82bbe380984e32f8cfc89c4",
+            "https://github.com/Kludex/python-multipart/commit/9433f4bbc9652bdde82bbe380984e32f8cfc89c4%20%280.0.22%29",
+            "https://github.com/Kludex/python-multipart/releases/tag/0.0.22",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-wp53-j4wj-2cfg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-24486",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-24486.json",
+            "https://ubuntu.com/security/notices/USN-8027-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-24486"
+          ],
+          "PublishedDate": "2026-01-27T01:16:02.303Z",
+          "LastModifiedDate": "2026-08-07T12:17:21.06Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-42561",
+          "VendorIDs": [
+            "GHSA-pp6c-gr5w-3c5g"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.27",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-42561",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:9a01f5114cf97b37c4c9475d10b70447a99c26f99a77673c76c4f4f4c629bb9c",
+          "Title": "python-multipart: python-multipart: Denial of Service via excessive multipart part headers",
+          "Description": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.27, python-multipart has a denial of service vulnerability in multipart part header parsing. When parsing multipart/form-data, MultipartParser previously had no limit on the number of part headers or the size of an individual part header. An attacker could send a request with either many repeated headers without terminating the header block or a single very large header value, causing excessive CPU work before request rejection or completion. This vulnerability is fixed in 0.0.27.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770",
+            "CWE-606"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:37275",
+            "https://access.redhat.com/errata/RHSA-2026:42132",
+            "https://access.redhat.com/errata/RHSA-2026:42142",
+            "https://access.redhat.com/errata/RHSA-2026:43038",
+            "https://access.redhat.com/errata/RHSA-2026:44696",
+            "https://access.redhat.com/errata/RHSA-2026:51194",
+            "https://access.redhat.com/errata/RHSA-2026:51219",
+            "https://access.redhat.com/errata/RHSA-2026:51357",
+            "https://access.redhat.com/security/cve/CVE-2026-42561",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2477309",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-pp6c-gr5w-3c5g",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-42561",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-42561.json",
+            "https://www.cve.org/CVERecord?id=CVE-2026-42561"
+          ],
+          "PublishedDate": "2026-05-13T21:16:47.07Z",
+          "LastModifiedDate": "2026-08-07T12:17:53.37Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-53539",
+          "VendorIDs": [
+            "GHSA-5rvq-cxj2-64vf"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.30",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53539",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:59cb1f7c1ae4c74e3b4cd9b3ade54bc15383e9b26552e19016b9f436381f44ec",
+          "Title": "python-multipart: Python-Multipart: Denial of Service via crafted form-urlencoded bodies",
+          "Description": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.30, when parsing application/x-www-form-urlencoded bodies, QuerystringParser located the field separator with a two step lookup: it first scanned the entire remaining buffer for \u0026, and only when no \u0026 existed anywhere ahead did it fall back to scanning for ;. For a body that uses ; as the separator and contains no \u0026, every field iteration performed a full failed \u0026 scan over the entire remaining buffer before locating the nearby ;. With N semicolon separated fields in a chunk of size B, this yields O(B^2) byte comparisons per chunk. An attacker can submit a small crafted body of the form a;a;a;... and cause the parser to spend seconds of CPU per request. A handful of concurrent requests can exhaust worker processes. This vulnerability is fixed in 0.0.30.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-53539",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-5rvq-cxj2-64vf",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-53539",
+            "https://www.cve.org/CVERecord?id=CVE-2026-53539"
+          ],
+          "PublishedDate": "2026-06-22T18:16:44.36Z",
+          "LastModifiedDate": "2026-06-26T19:50:56.51Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-40347",
+          "VendorIDs": [
+            "GHSA-mj87-hwqh-73pj"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.26",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-40347",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:c3e7fb1685e98f444e5415981aadb52543278df376627471af135807dfcdc385",
+          "Title": "python-multipart: Python-Multipart: Denial of Service via crafted multipart/form-data requests",
+          "Description": "Python-Multipart is a streaming multipart parser for Python. Versions prior to 0.0.26 have a denial of service vulnerability when parsing crafted `multipart/form-data` requests with large preamble or epilogue sections. Upgrade to version 0.0.26 or later, which skips ahead to the next boundary candidate when processing leading CR/LF data and immediately discards epilogue data after the closing boundary.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-834"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-40347",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/releases/tag/0.0.26",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-mj87-hwqh-73pj",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-40347",
+            "https://www.cve.org/CVERecord?id=CVE-2026-40347"
+          ],
+          "PublishedDate": "2026-04-18T00:16:38.52Z",
+          "LastModifiedDate": "2026-06-17T10:45:09.547Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-53537",
+          "VendorIDs": [
+            "GHSA-vffw-93wf-4j4q"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.30",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53537",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:6c12bcd898ff00d6e0d201af37bd98f6e08d6741c523909289fd16b1a0b1596b",
+          "Title": "multipart: Python-Multipart: Information disclosure via header parsing discrepancy",
+          "Description": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.30, parse_options_header parsed Content-Disposition (and Content-Type) headers with email.message.Message, which transparently applies RFC 2231/5987 decoding. The extended parameter syntax (filename*=charset'lang'value, name*=..., and the filename*0/filename*1 continuation form) is decoded and surfaced under the bare filename/name key, and overrides the plain parameter when both are present. RFC 7578 §4.2 explicitly forbids the filename* form in multipart/form-data. Components that follow RFC 7578, or that do not implement RFC 2231/5987 decoding for multipart/form-data (WAFs, proxies, gateways), may interpret such a header differently. An attacker can exploit that difference to smuggle a different field name or filename past an upstream inspector to the backend. This vulnerability is fixed in 0.0.30.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-436"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "nvd": 2,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-53537",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-vffw-93wf-4j4q",
+            "https://github.com/advisories/GHSA-vffw-93wf-4j4q",
+            "https://github.com/pypa/advisory-database/blob/main/vulns/python-multipart/PYSEC-2026-3041.yaml",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-53537",
+            "https://pypi.org/project/python-multipart",
+            "https://www.cve.org/CVERecord?id=CVE-2026-53537"
+          ],
+          "PublishedDate": "2026-06-22T18:16:44.077Z",
+          "LastModifiedDate": "2026-06-26T19:54:37.68Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-53538",
+          "VendorIDs": [
+            "GHSA-6jv3-5f52-599m"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.30",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53538",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:d8e51b3e075a9a7cf7d6037522e2527a8d948e39791664e257f25af3d324bbb7",
+          "Title": "python-multipart: Python-Multipart: Information disclosure due to parser differential in form data handling",
+          "Description": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.30, QuerystringParser treated ; as a field separator in application/x-www-form-urlencoded bodies, in addition to \u0026. The WHATWG URL standard, modern browsers, and Python's urllib.parse (since the CVE-2021-23336 fix) treat only \u0026 as a separator. This creates a parser differential: the same bytes are tokenized into different fields than a WHATWG compliant intermediary would produce, allowing an attacker to smuggle extra form fields past an upstream body inspecting component. This vulnerability is fixed in 0.0.30.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-436",
+            "CWE-444"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 4.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-53538",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-6jv3-5f52-599m",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-53538",
+            "https://www.cve.org/CVERecord?id=CVE-2026-53538"
+          ],
+          "PublishedDate": "2026-06-22T18:16:44.223Z",
+          "LastModifiedDate": "2026-06-26T19:52:35.633Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-53540",
+          "VendorIDs": [
+            "GHSA-v9pg-7xvm-68hf"
+          ],
+          "PkgName": "python-multipart",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/python-multipart@0.0.6",
+            "UID": "512f06cd374cf60d"
+          },
+          "InstalledVersion": "0.0.6",
+          "FixedVersion": "0.0.31",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53540",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:94b031bed60439488ddcd9fadf975ae5f3f53209378fce5672968bb8edf7a0e4",
+          "Title": "python-multipart: Python-Multipart: Negative Content-Length in parse_form buffers the entire body in memory",
+          "Description": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.31, parse_form() did not validate the Content-Length header before using it to bound its chunked read of the request body. A negative Content-Length turned the bounded read into a read-until-EOF, so the entire body was loaded into memory in a single read instead of in fixed-size chunks. This vulnerability is fixed in 0.0.31.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-1284"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-53540",
+            "https://github.com/Kludex/python-multipart",
+            "https://github.com/Kludex/python-multipart/security/advisories/GHSA-v9pg-7xvm-68hf",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-53540",
+            "https://www.cve.org/CVERecord?id=CVE-2026-53540"
+          ],
+          "PublishedDate": "2026-06-22T18:16:44.497Z",
+          "LastModifiedDate": "2026-06-26T19:50:18.34Z"
+        }
+      ]
+    }
+  ]
+}

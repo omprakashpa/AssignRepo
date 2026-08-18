@@ -1,0 +1,57 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.74.0"
+  },
+  "ReportID": "01a0130e-52f8-7daa-a08e-fe53b36ce2ef",
+  "CreatedAt": "2026-08-18T04:08:20.984898056Z",
+  "ArtifactName": "helm",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "vulntracker/templates/deployment.yaml",
+      "Class": "config",
+      "Type": "helm",
+      "MisconfSummary": {
+        "Successes": 22,
+        "Failures": 0
+      }
+    },
+    {
+      "Target": "vulntracker/templates/externalsecret.yaml",
+      "Class": "config",
+      "Type": "helm",
+      "MisconfSummary": {
+        "Successes": 10,
+        "Failures": 0
+      }
+    },
+    {
+      "Target": "vulntracker/templates/networkpolicy.yaml",
+      "Class": "config",
+      "Type": "helm",
+      "MisconfSummary": {
+        "Successes": 10,
+        "Failures": 0
+      }
+    },
+    {
+      "Target": "vulntracker/templates/service.yaml",
+      "Class": "config",
+      "Type": "helm",
+      "MisconfSummary": {
+        "Successes": 11,
+        "Failures": 0
+      }
+    },
+    {
+      "Target": "vulntracker/templates/serviceaccount.yaml",
+      "Class": "config",
+      "Type": "helm",
+      "MisconfSummary": {
+        "Successes": 10,
+        "Failures": 0
+      }
+    }
+  ]
+}
