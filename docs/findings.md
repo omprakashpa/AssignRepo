@@ -1,5 +1,7 @@
 # Security Findings
 
+
+
 ## Assessment Overview
 
 The repository was assessed using four automated security scanning categories:
@@ -442,6 +444,123 @@ This result should **not** be recorded as a vulnerability. It should be reported
 | — | IaC misconfiguration | — | 0 findings / 63 checks passed |
 
 ---
+## Manual Security Review and Remediation Validation
+
+In addition to automated scanning, the application was manually reviewed against common application security risks.
+
+The following issues were identified in the original/starter implementation and remediated before submission.
+
+### M-001 — SQL Injection Risk
+
+**Original Risk:**
+
+The original implementation constructed SQL queries using user-controlled input, creating a potential SQL injection risk.
+
+**Remediation:**
+
+The query was changed to use parameterized SQL rather than concatenating user input into the SQL statement.
+
+**Validation:**
+
+Reviewed the final database query implementation and confirmed that user-controlled values are passed as parameters.
+
+**Evidence:**
+
+`app/database.py`
+
+**Status:** Remediated
+
+---
+
+### M-002 — Authorization / Ownership Risk
+
+**Original Risk:**
+
+Sensitive scan/share operations required stronger ownership validation to prevent one user from accessing another user's resources.
+
+**Remediation:**
+
+Ownership checks were added before sensitive scan retrieval and share-link creation.
+
+**Validation:**
+
+Reviewed the authorization flow to confirm that the authenticated user's identity is compared with the resource owner before access is permitted.
+
+**Evidence:**
+
+`app/auth.py`
+
+`app/main.py`
+
+**Status:** Remediated
+
+---
+
+### M-003 — JWT Validation Weakness
+
+**Original Risk:**
+
+JWT validation required explicit restriction of the accepted signing algorithm.
+
+**Remediation:**
+
+JWT decoding was updated to use the configured algorithm instead of allowing the algorithm to be controlled by the token.
+
+**Validation:**
+
+Reviewed the JWT verification logic and confirmed that the accepted algorithm is explicitly configured.
+
+**Evidence:**
+
+`app/auth.py`
+
+**Status:** Remediated
+
+---
+
+### M-004 — Sensitive Data Logging
+
+**Original Risk:**
+
+Sensitive authentication information could potentially be exposed through application logging.
+
+**Remediation:**
+
+Passwords and sensitive authentication values were removed from application logging.
+
+**Validation:**
+
+Reviewed application logging statements and confirmed that passwords are not written to logs.
+
+**Evidence:**
+
+`app/`
+
+**Status:** Remediated
+
+---
+
+### M-005 — Information Disclosure
+
+**Original Risk:**
+
+Error handling and API responses could potentially expose internal application information.
+
+**Remediation:**
+
+Generic error responses were implemented and internal ownership information such as `owner_id` was excluded from public shared-report responses.
+
+**Validation:**
+
+Reviewed API error handling and public response models to confirm that stack traces and internal fields are not exposed.
+
+**Evidence:**
+
+`app/main.py`
+
+`app/models.py`
+
+**Status:** Remediated
 
 ## Overall Assessment
 
