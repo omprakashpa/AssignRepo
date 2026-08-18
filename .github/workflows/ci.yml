@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Python tests
+        run: pytest tests/ -v
+
+  node-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: notify
+        run: npm install
+
+      - name: Run Node tests
+        working-directory: notify
+        run: npm test
+
+  security:
+    runs-on: ubuntu-latest
+    needs: [python-tests, node-tests]
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Semgrep
+        run: pip install semgrep
+
+      - name: Run SAST
+        run: |
+          mkdir -p reports
+          semgrep scan --config auto --json --output reports/sast.semgrep.json app notify
+
+      - name: Run filesystem SCA
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          scanners: vuln
+          format: json
+          output: reports/sca.trivy.json
+          exit-code: "0"
+
+      - name: Build Docker image
+        run: docker build -t vulntracker-api:${{ github.sha }} .
+
+      - name: Run container scan
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: vulntracker-api:${{ github.sha }}
+          format: json
+          output: reports/container.trivy.json
+          severity: HIGH,CRITICAL
+          exit-code: "0"
+
+      - name: Run IaC scan
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          scan-type: config
+          scan-ref: helm/
+          format: json
+          output: reports/iac.trivy.json
+          severity: HIGH,CRITICAL
+          exit-code: "0"
+
+      - name: Upload security reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: reports/*.json
