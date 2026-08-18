@@ -2,48 +2,64 @@
 
 ## 1. Objective
 
-This remediation plan defines the actions required to address the security findings identified through the SAST and SCA scans.
+This document defines the remediation actions for the security findings identified during the security assessment.
 
-The assessment also included container image scanning and Infrastructure-as-Code (IaC) scanning. No findings were identified in those two areas.
+The assessment covered:
 
-The remediation approach prioritizes vulnerabilities based on:
+- SAST
+- Software Composition Analysis (SCA)
+- Container Image Scanning
+- Infrastructure-as-Code (IaC) Scanning
 
-- Severity
-- Exploitability
-- Potential business impact
-- Exposure of the affected component
-- Availability of a vendor-fixed version
-- Whether the vulnerable component is directly used by the application
+Remediation priority is based on severity, exploitability, potential impact, and availability of a fixed version.
 
 ---
 
-## 2. Finding Summary
+## 2. Remediation Summary
 
-| Security Area | Status | Priority |
+| Area | Finding Status | Remediation |
 |---|---|---|
-| SAST | Findings identified | High |
-| SCA | Multiple HIGH findings identified | High |
-| Container Image Scan | No vulnerabilities identified | Informational |
-| IaC Scan | No misconfigurations identified | Informational |
+| SAST | Findings identified | Review and fix the affected source code |
+| SCA | Multiple HIGH vulnerabilities | Upgrade affected dependencies |
+| Container Scan | No vulnerabilities | No remediation required |
+| IaC Scan | 0 failures | No remediation required |
 
 ---
 
-## 3. SCA Remediation
+# 3. SAST Remediation
 
-### 3.1 python-multipart – Path Traversal / Arbitrary File Write
+SAST findings should be reviewed against the affected source code and validated manually before remediation.
 
-**Package:** `python-multipart`  
-**Installed Version:** `0.0.6`  
-**Fixed Version:** `0.0.22`  
-**Severity:** High  
-**CWE:** CWE-22  
-**CVSS:** 8.6  
-**Vulnerability:** CVE-2026-24486
+### Remediation approach
 
-#### Risk
+For each SAST finding:
 
-The vulnerable version can allow an attacker to perform path traversal when multipart upload functionality is configured with:
+1. Review the affected source code.
+2. Confirm whether the finding is exploitable.
+3. Identify the root cause.
+4. Apply the appropriate secure coding fix.
+5. Add or update test cases where required.
+6. Run the SAST scan again.
+7. Confirm that the finding is no longer reported.
+
+### Validation
+
+The SAST result should be considered remediated only after:
+
+- The vulnerable code has been fixed.
+- Application tests pass.
+- The SAST scanner no longer reports the finding.
+- No new security issue is introduced by the fix.
+
+---
+
+# 4. SCA Remediation
+
+The SCA scan identified multiple HIGH-severity vulnerabilities in Python dependencies.
+
+## 4.1 python-multipart
+
+### Current Version
 
 ```text
-UPLOAD_DIR
-UPLOAD_KEEP_FILENAME=True
+0.0.6
