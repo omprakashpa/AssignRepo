@@ -64,7 +64,7 @@ jobs:
           semgrep scan --config auto --json --output reports/sast.semgrep.json app notify
 
       - name: Run filesystem SCA
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: fs
           scan-ref: .
@@ -77,7 +77,7 @@ jobs:
         run: docker build -t vulntracker-api:${{ github.sha }} .
 
       - name: Run container scan
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: vulntracker-api:${{ github.sha }}
           format: json
@@ -86,7 +86,7 @@ jobs:
           exit-code: "0"
 
       - name: Run IaC scan
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: config
           scan-ref: helm/
